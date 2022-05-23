@@ -1,0 +1,53 @@
+body {
+    overflow: hidden;
+	  background-image: url("../images/backgroundimage.jpg");
+}
+
+div {
+    position: relative;
+    width:450px;
+    height:450px;
+    transform-style: preserve-3d;
+  background-image: url(../images/1.jpg);
+    border-radius: 50%;
+    animation: turn 2.5s linear infinite;
+}
+span {
+    position:absolute;
+    font-size:20px;
+    font-weight: 900;
+    transform-style: preserve-3d;
+    transform: rotateX(-85deg) translateY(-0.5em) translateX(50%);
+    animation: move 2.5s linear infinite;
+	color: #FFF;
+}
+
+@keyframes turn {
+    0% {
+        transform:perspective(200px) rotateX(85deg) rotate(0);
+    }
+    60% {
+        transform:perspective(200px) rotateX(85deg) rotate(30deg);
+    }
+    100% {
+        transform:perspective(200px) rotateX(85deg) rotate(120deg);
+    }
+  }
+
+@keyframes move {
+    0% {
+        top:0;
+        right:0;
+        opacity:0.7;
+    }
+    60% {
+        top: 100%;
+        right: 40%;
+        opacity:1;
+    }
+    100% {
+        top: 100%;
+        right: 100%;
+        opacity:0;
+    }
+  }

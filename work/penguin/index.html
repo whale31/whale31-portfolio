@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Penguin　ドリンク専門店</title>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Erik Terwan">
+<script type="text/javascript" src="js/ScrollTrigger.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+(function($) {
+$(function() {
+var $header = $('#top-head');
+// Nav Fixed
+$(window).scroll(function() {
+if ($(window).scrollTop() > 350) {
+$header.addClass('fixed');
+} else {
+$header.removeClass('fixed');
+}
+});
+// Nav Toggle Button
+$('#nav-toggle,#global-nav ul li a').click(function(){
+    $header.toggleClass('open');
+});
+
+});
+})(jQuery);
+
+
+
+
+</script>
+</head>
+
+<body>
+
+
+<header id="top-head">
+<div class="inner">
+<div id="mobile-head">
+<h1 class="logo"><a href="index.html#home"><img src="images/logo1.png" width="50" height="50" alt=""/>Penguin</a></h1>
+<div id="nav-toggle">
+<div class="navmenu">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+<nav id="global-nav">
+<ul>
+<li><a href="index.html#home">home</a></li>
+<li><a href="index.html#news">News</a></li>
+<li><a href="index.html#menu">Menu</a></li>
+<li><a href="index.html#shop">Shop</a></li>
+<li><a href="index.html#access">Access</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+
+<section id="home">
+<div class="block">
+<div class="homebox">
+<img src="images/logo2.png" width="104" height="123" alt=""/>
+<h2 data-scroll="toggle(.scaleUpIn, .scaleUpOut)">飲むものに<span></span>こだわりを</h2>
+<p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+コーヒー、お茶を取り扱うドリンク専門店
+<br>コーヒー、紅茶、鴛鴦茶のテイクアウト
+<br>コーヒー豆、茶葉の購入が楽しめます</p>
+<br><br><h2 class="updown">▼</h2>
+</div>
+</div>
+</section>
+
+
+
+<section id="news">
+<div class="block">
+<div class="newsbox">
+<h2 data-scroll="toggle(.fromTopIn, .fromTopOut)">お知らせ</h2>
+<ul class="newslist">
+<li data-scroll="toggle(.fromBottomIn, .fromBottomOut)">12月1日</li>
+<li data-scroll="toggle(.fromRightIn, .fromRightOut)">おすすめを変更しました。</li>
+<br><li data-scroll="toggle(.fromBottomIn, .fromBottomOut)">12月5日</li>
+<li data-scroll="toggle(.fromLeftIn, .fromLeftOut)">コーヒーを入荷しました。</li>
+<br><li data-scroll="toggle(.fromBottomIn, .fromBottomOut)">1月1日</li>
+<li data-scroll="toggle(.fromRightIn, .fromRightOut)">おすすめを変更しました。</li>
+<br><li data-scroll="toggle(.fromBottomIn, .fromBottomOut)">1月15日</li>
+<li data-scroll="toggle(.fromLeftIn, .fromLeftOut)">新しい茶葉を入荷しました。</li>
+</ul>
+
+<a href="https://twitter.com/"><div class="newsbox2">最新情報（twitter）</div></a>
+</div>
+</div>
+</section>
+
+
+
+<section id="menu">
+<div class="block">
+<div class="menubox">
+<h2 data-scroll="toggle(.scaleDownIn, .scaleDownOut)">テイクアウト<span>メニュー</span></h2>
+
+<div class="menubox2">
+<ul class="menu_list">
+<li><p class="thumbnail" data-scroll="toggle(.fromTopIn, .fromTopOut)"></p>
+<h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">コーヒー</h2>
+<p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">・キリマンジャロ
+<br>・ブルーマウンテン
+<br>・モカ
+<br>・マンデリン
+<br>・コロンビア
+<br>・グァテマラ
+<br>・おすすめ（オリジナルブレンド）
+<br><br>オプション
+<br>ホット / アイス
+<br>シュガー　in / out
+<br>ミルク　in / out
+</p>
+</li>
+<li><p class="thumbnail" data-scroll="toggle(.fromTopIn, .fromTopOut)"></p>
+<h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">紅茶</h2>
+<p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">・ダージリン
+<br>・アッサム
+<br>・セイロン（スリランカ）
+<br>・ウバ
+<br>・キーマン（祁門・キームン）
+<br>・ニルギリ
+<br>・おすすめ（オリジナルブレンド）
+<br><br>オプション
+<br>ホット / アイス
+<br>シュガー　in / out
+<br>ミルク　in / out
+</p>
+</li>
+<li><p class="thumbnail" data-scroll="toggle(.fromTopIn, .fromTopOut)"></p>
+<h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">鴛鴦茶</h2>
+<p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">紅茶とコーヒーをブレンドした、砂糖とミルクがたっぷり入った甘めの飲み物です。香港では、一般的な飲み物として浸透しています。
+<br><br>オプション
+<br>ホット / アイス
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="shop">
+<div class="block">
+<div class="shopbox">
+<h2 data-scroll="toggle(.scaleDownIn, .scaleDownOut)">オンライン<span>ストア</span></h2>
+
+<div class="shopbox2">
+<ul class="shop_list">
+<li>
+<a href="https://kaldi-online.com/category/COFFEE_BAISEN/">
+  <p class="thumbnail" data-scroll="toggle(.fromLeftIn, .fromLeftOut)"></p>
+  <h2 data-scroll="toggle(.fromRightIn, .fromRightOut)" data-scroll-showCallback="counter">コーヒー</h2>
+  <p data-scroll="toggle(.fromRightIn, .fromRightOut)" data-scroll-showCallback="counter">世界各国から届いたコーヒー豆・125種類以上ございます。
+  <br>コーヒー豆は、ご注文を頂いてから焙煎します！
+  <br>他にはない専門店ならではの味わいをお届けします。
+  <br><br>店頭ではオンラインストアで、人気の10種類のコーヒー豆をご購入いただけます。</p>
+<h2 data-scroll="toggle(.fromTopIn, .fromTopOut)" data-scroll-showCallback="counter">▶︎ 購入　　　</h2>
+</a>
+</li>
+
+
+<li>
+<a href="https://kaldi-online.com/category/TEA/">
+<p class="thumbnail" data-scroll="toggle(.fromLeftIn, .fromLeftOut)"></p>
+<h2 data-scroll="toggle(.fromRightIn, .fromRightOut)" data-scroll-showCallback="counter">茶葉</h2>
+<p data-scroll="toggle(.fromRightIn, .fromRightOut)" data-scroll-showCallback="counter">紅茶、日本茶、中国茶を取り扱っております。
+<br>他にはない専門店ならではの味わいをお届けします。
+<br><br>店頭では、お客様に合わせたオリジナルティーをご購入いただけます。
+</p>
+<h2 data-scroll="toggle(.fromTopIn, .fromTopOut)" data-scroll-showCallback="counter">▶︎ 購入　 </h2>
+</a>
+</li>
+
+</ul>
+
+
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+
+<section id="access">
+<div class="block">
+<div class="accessbox">
+
+
+<h2 data-scroll="toggle(.fromTopIn, .fromTopOut)">アクセス</h2>
+
+
+<div class="accessbox2">
+<ul class="access_list">
+<li><a href="https://www.google.com/maps/?hl=ja"><p class="thumbnail" data-scroll="toggle(.fromLeftIn, .fromLeftOut)"></p></a>
+</li>
+<li>
+<p data-scroll="toggle(.fromRightIn, .fromRightOut)" data-scroll-showCallback="counter">
+〒○○○-○○○○<br>○○都○○区○○○ ○-○○-○○　○○1F
+<br>○○-○○○-○○○○
+<br>11:00-23:00
+<br>無休(年末年始を除く)
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<footer>
+&#169; Penguin ALL RIGHTS RESERVED.
+</footer>
+
+
+<script src="../ScrollTrigger.min.js"></script>
+<script>
+window.counter = function() {
+// this refers to the html element with the data-scroll-showCallback tag
+var span = this.querySelector('span');
+var current = parseInt(span.textContent);
+
+span.textContent = current + 1;
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+var trigger = new ScrollTrigger({
+addHeight: true
+});
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,500,700" rel="stylesheet">
+
+</body>
+</html>
