@@ -93,12 +93,20 @@ p {
 /* footer */
 footer {
 	width: 100%;
-	padding: 5em 0 6em 0 ;
+	padding: 24px 0 24px 0 ;
 	background-color:rgba(13,13,14,0.6);
 }
 
 footer p {
-	margin: 36px 24px 24px 24px;
-	padding: 16px 14px 16px 14px;	
 	color: #F4FBFE;
+}
+
+.profile-wrapper {
+	margin: auto 0;
+	padding: 14px 14px 16px 14px;
+}
+
+.footer-wrapper {
+	margin: auto 0;
+	padding: 24px 14px 16px 14px;
 }
