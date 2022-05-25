@@ -23,11 +23,11 @@ a {
 
 body {
 	background-image: url("../../images/backimage.png");
-	background-repeat: repeat;
+	background-size: cover;
+	background-color: #202124;
 	margin: 0;
 	padding: 0;
-	background-color: #000000;
-	color: #FFFFFF;
+	color: #F4FBFE;
 }
 
 h1 {
@@ -37,29 +37,46 @@ h1 {
 	font-family: 'Grape Nuts', cursive;
 }
 
+h2, h3, h4, h5, h6 {
+	font-weight: 900;
+	line-height: 1.5;
+	margin: 20px 0 20px 0;
+	text-transform: uppercase;
+	letter-spacing: 0.35em;
+	color: #F4FBFE;
+
+}
+
+h2 {
+	font-size: 1em;
+}
+
+
+
 /* header */
 .header-wrapper {
-	margin: 0px 24px 14px 24px;
+	margin: 0px 55px 14px 75px;
 	padding: 82px 14px 16px 14px;
 }
 
 header p {
 	margin: 36px 24px 24px 24px;
-	padding: 16px 14px 16px 14px;
+	padding: 16px 14px 16px 14px;	
 	color: #F4FBFE;
 }
 
 /* main */
 .work-wrapper {
+	margin: 0 55px 65px 55px;
 	display: grid;
-	gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 15px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .work-box {
 	border-radius: 10px;
-	background: #202124;
-	padding: 15px;
+	background-color:rgba(13,13,14,0.6);
+	padding: 55px;
 	text-align: center;
 }
 
@@ -70,5 +87,18 @@ img {
 
 p {
 	text-align: left;
+	color: #F4FBFE;
+}
+
+/* footer */
+footer {
+	width: 100%;
+	padding: 5em 0 6em 0 ;
+	background-color:rgba(13,13,14,0.6);
+}
+
+footer p {
+	margin: 36px 24px 24px 24px;
+	padding: 16px 14px 16px 14px;	
 	color: #F4FBFE;
 }
