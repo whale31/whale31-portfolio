@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(reset.css);
+
+/* Basic */
+img {
+	vertical-align: bottom;
+}
+
+main {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+.cf:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+body {
+	background-image: url("../../images/backimage.png");
+	background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+h1 {
+	font-size: 64px;
+	color: #F4FBFE;
+	font-weight: bolder;
+	font-family: 'Grape Nuts', cursive;
+}
+
+/* header */
+.header-wrapper {
+	margin: 0px 24px 14px 24px;
+	padding: 82px 14px 16px 14px;
+}
+
+header p {
+	margin: 36px 24px 24px 24px;
+	padding: 16px 14px 16px 14px;
+	color: #F4FBFE;
+}
+
+/* main */
+.work-wrapper {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.work-box {
+	border-radius: 10px;
+	background: #202124;
+	padding: 15px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+p {
+	text-align: left;
+	color: #F4FBFE;
+}

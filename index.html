@@ -1,40 +1,76 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html>
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>A-portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="assets/js/jquery.ripples.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('body').ripples({
+        resolution: 750, //波紋の広がりの速度（値が大きいほど遅くなる。）
+        dropRadius: 10, //波紋の大きさ（値が大きいほど大きくなる。）
+        perturbance: 0.1 //波紋による屈折量（値が大きいほどブレる。）
+      });
+    });
+  </script>
 </head>
 
 <body>
-  <div class="wrapper">
+  <header>
+    <div class="header-wrapper">
+      <a href="index.html">
+        <h1>A-portfolio</h1>
+      </a>
+      <p>Portfolio of whale31</p>
+    </div>
+  </header>
 
-    <main class="content">
-        <div class="index-whopper">
-          <div class="index-whopper-img">
-            <img src="images/index-icon.png" alt="くじら" class="index-img">
-          </div>
-          <div class="index-text">
-            <p class="index-text-name">Portfolio</p>
-            <p>Welcome to My Portfolio</p>
-          </div>
-          <div class="index-link">
-            <a href="top.html" class="btn btn--orange btn--radius">Look at Work</a>
-          </div>
-        </div>
-    </main>
+  <div class="work-wrapper">
+    <div class="work-box">
+      <img src="http://placehold.it/240x150" alt="" />
+      <h2></h2>
+      <p>
+      </p>
+    </div>
+    <div class="work-box">
+      <img src="http://placehold.it/240x150" alt="" />
+      <p>
 
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="copyright">Copyright © 2022 whale31 All Rights Reserved.</div>
-    </footer>
-    <!-- /footer -->
-
+      </p>
+    </div>
+    <div class="work-box">
+      <img src="http://placehold.it/240x150" alt="" />
+      <p>
+      </p>
+    </div>
+    <div class="work-box">
+      <img src="http://placehold.it/240x150" alt="" />
+      <p>
+      </p>
+    </div>
+    <div class="work-box">
+      <img src="http://placehold.it/240x150" alt="" />
+      <p>
+      </p>
+    </div>
+    <div class="work-box">
+      <img src="http://placehold.it/240x150" alt="" />
+      <p>
+      </p>
+    </div>
   </div>
-</body>
 
+  <footer>
+
+  </footer>
+
+</body>
 </html>
