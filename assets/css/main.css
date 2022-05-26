@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 42px;
 	color: #EAF4FC;
 	font-weight: 900;
 }
@@ -79,7 +79,7 @@ header p {
 
 /* main */
 .work-about-wrapper {
-	margin: 120px auto 24px auto;
+	margin: 64px auto 24px auto;
 	text-align: center;
 }
 
@@ -186,7 +186,7 @@ ul li {
 /* footer */
 footer {
 	width: 100%;
-	padding: 24px 0 24px 0;
+	padding: 14px 0 14px 0;
 	background-color: rgba(13, 13, 14, 0.6);
 }
 
@@ -195,11 +195,27 @@ footer p {
 }
 
 .profile-wrapper {
-	margin: 0px 55px 14px 75px;
-	padding: 82px 14px 16px 14px;
+	margin: 14px 55px 14px 75px;
+	padding: 24px 14px 16px 14px;
+}
+
+.profile-text {
+	color: #EAF4FC;
+	margin: 14px auto;
+	padding: 12px auto;
+	line-height: 2.0;
 }
 
 .footer-wrapper {
 	margin: 0px 55px 14px 75px;
-	padding: 82px 14px 16px 14px;
+	padding: 24px 14px 16px 14px;
+}
+
+.sns-wrapper {
+	margin: 14px auto;
+}
+
+.sns {
+	fill: #EAF4FC;
+	margin: 0 0 0 10px;
 }
