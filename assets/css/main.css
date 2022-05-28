@@ -34,12 +34,14 @@ h1 {
 	color: #EAF4FC;
 	font-weight: 900;
 	font-family: 'Grape Nuts', cursive;
+	-webkit-text-stroke: 1px #002B40;
 }
 
 h2 {
 	font-size: 42px;
 	color: #EAF4FC;
 	font-weight: 900;
+	-webkit-text-stroke: 1px #002B40;
 }
 
 h3 {
@@ -64,17 +66,18 @@ h6 {
 /* header */
 header {
 	width: 100%;
-	background-color: rgba(13, 13, 14, 0.6);
 }
 
 .header-wrapper {
-	margin: 0 24px 24px 75px;
+	margin: 0 14px 24px 75px;
 	padding: 82px 14px 16px 14px;
 }
 
 header p {
-	margin: 0 24px 24px 75px;
-	padding: 42px 14px 16px 14px;
+	color: #EAF4FC;
+	margin: 14px auto;
+	padding: 12px auto;
+	line-height: 2.0;
 }
 
 /* main */
@@ -94,7 +97,7 @@ header p {
 	margin: 0 55px 65px 55px;
 	display: grid;
 	gap: 15px;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .work-box {
@@ -123,7 +126,7 @@ img {
 ul {
 	padding: 0;
 	font: 14px/1.6 'arial narrow', sans-serif;
-	width: 300px;
+	width: 180px;
 	list-style: none;
 }
 
@@ -150,7 +153,7 @@ ul li {
 	justify-content: space-around;
 	align-items: center;
 	margin: 0 auto;
-	max-width: 240px;
+	max-width: 250px;
 	padding: 15px 25px;
 	color: #EAF4FC;
 	transition: 0.3s ease-in-out;
@@ -203,7 +206,7 @@ footer p {
 	color: #EAF4FC;
 	margin: 14px auto;
 	padding: 12px auto;
-	line-height: 2.0;
+	line-height: 1.2;
 }
 
 .footer-wrapper {
