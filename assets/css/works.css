@@ -30,6 +30,32 @@ img {
 	color: #EAF4FC;
 }
 
+
+.work-individual-wrapper {
+	background-color: rgba(13, 13, 14, 0.6);
+	max-width: 980px;
+	margin: 0 auto;
+
+}
+
+.work-individual {
+	margin: 26px 26px 26px 26px;
+	padding: 26px 26px 26px 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .list {
 	margin: 0 auto 34px auto;
 }
