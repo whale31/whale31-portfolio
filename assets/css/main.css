@@ -26,7 +26,7 @@ color: #222222;
 }
 
 body {
-	background-image: linear-gradient(to top, #002B40 0%, #0454af 50%, #8adee6 100%);
+	background-image: linear-gradient(to top, #002B40 0%, #0454af 50%, #9de5eb 100%);
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -118,12 +118,13 @@ header p {
   transform: translate(-50%,-50%);
   margin:0;
   padding:0;
-	font-size: 24px;
+	font-size: 22px;
   }
 
 .about img {
 	max-width: 980px;
 	margin: 0 180px 0 180px;
+	transform: translateX(-20px);
   }
 
 /* main */
