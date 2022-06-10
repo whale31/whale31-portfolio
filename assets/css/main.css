@@ -26,7 +26,7 @@ color: #222222;
 }
 
 body {
-	background-image: linear-gradient(to top, #002B40 0%, #0454af 20%, #8adee6 100%);
+	background-image: linear-gradient(to top, #002B40 0%, #0454af 50%, #8adee6 100%);
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -89,17 +89,17 @@ header p {
 
 .about-wrapper {
 	margin: -26px 0 -80px 0;
-	background: #0454af;
+	background: #2e7fdb;
 }
 
 .about-top-wrapper {
 	max-width: 980px;
 	margin: 0 auto;
-	background: #0454af;
+	background: #2e7fdb;
 }
 
 .about-top {
-	background: #0454af;
+	background: #2e7fdb;
 	margin: 0 auto;
 	padding: 42px 0 82px 0;
 }
@@ -132,7 +132,7 @@ header p {
 	margin: -5px 0 -68px 0;
 	padding: 84px 0 0 0;
 	text-align: center;
-	background-color: #2e7fdb;
+	background-color: #0454af;
 }
 
 .work-about-text {
