@@ -15,6 +15,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+color: #222222;
+}
+
 .cf:after {
 	content: "";
 	clear: both;
@@ -22,7 +26,7 @@ a {
 }
 
 body {
-	background-image: linear-gradient(to top, #002B40 0%, #0454af 70%, #8adee6 100%);
+	background-image: linear-gradient(to top, #002B40 0%, #0454af 20%, #8adee6 100%);
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -70,21 +74,65 @@ header {
 }
 
 .header-wrapper {
-	margin: 16px 16px 16px 16px;
+	margin: 16px 16px 8px 16px;
 	padding: 86px 16px 16px 16px;
 }
 
 header p {
-	color: #EAF4FC;
+	color: #002B40;
 	margin: 14px auto;
 	padding: 12px auto;
 	line-height: 2.0;
 }
 
+/* about */
+
+.about-wrapper {
+	margin: -26px 0 -80px 0;
+	background: #0454af;
+}
+
+.about-top-wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+	background: #0454af;
+}
+
+.about-top {
+	background: #0454af;
+	margin: 0 auto;
+	padding: 42px 0 82px 0;
+}
+
+.about {
+	position: relative;
+}
+
+.about p {
+	color: #EAF4FC;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+	font-size: 24px;
+  }
+
+.about img {
+	max-width: 980px;
+	margin: 0 180px 0 180px;
+  }
+
 /* main */
+
 .work-about-wrapper {
-	margin: 64px 0 24px 0;
+	margin: -5px 0 -68px 0;
+	padding: 84px 0 0 0;
 	text-align: center;
+	background-color: #2e7fdb;
 }
 
 .work-about-text {
@@ -93,6 +141,7 @@ header p {
 	text-align: center;
 	color: #EAF4FC;
 }
+
 
 .main-wrapper {
 	margin: 0 55px 65px 55px;
@@ -166,7 +215,7 @@ img {
 /* footer */
 footer {
 	width: 100%;
-	background-color: rgba(13, 13, 14, 0.6);
+	background-color: #002B40;
 }
 
 .footer-wrapper {
@@ -174,18 +223,14 @@ footer {
 	margin: 0 auto;
 }
 
-footer p {
-	color: #EAF4FC;
-}
-
 .profile-wrapper {
 	margin: 0 auto;
-	padding: 86px 0 16px 0;
+	padding: 14px 0 16px 0;
 }
 
 .profile-text {
 	color: #EAF4FC;
-	margin: 14px auto;
+	margin: 12px auto;
 	padding: 12px auto;
 	line-height: 1.2;
 }
@@ -201,4 +246,6 @@ footer p {
 
 .copyright {
 	text-align: right;
+	color: #EAF4FC;
+	padding: 0 0 14px 0;
 }
