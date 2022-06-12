@@ -16,7 +16,7 @@ a {
 }
 
 p {
-color: #222222;
+	color: #222222;
 }
 
 .cf:after {
@@ -86,7 +86,6 @@ header p {
 }
 
 /* about */
-
 .about-wrapper {
 	margin: -26px 0 -80px 0;
 	background: #2e7fdb;
@@ -110,39 +109,37 @@ header p {
 
 .about p {
 	color: #EAF4FC;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
 	font-size: 22px;
-  }
+}
 
 .about img {
 	max-width: 980px;
 	margin: 0 180px 0 180px;
 	transform: translateX(-20px);
-  }
+}
 
 /* main */
-
-.work-about-wrapper {
+.main-about-wrapper {
 	margin: -5px 0 -68px 0;
 	padding: 84px 0 0 0;
 	text-align: center;
 	background-color: #0454af;
 }
 
-.work-about-text {
+.main-about-text {
 	margin: 14px 24px 24px 24px;
 	padding: 16px 14px 16px 14px;
 	text-align: center;
 	color: #EAF4FC;
 }
-
 
 .main-wrapper {
 	margin: 0 55px 65px 55px;
@@ -168,11 +165,6 @@ img {
 	padding: 22px 12px 22px 12px;
 	text-align: left;
 	color: #EAF4FC;
-}
-
-/* ボタンリンク */
-.work-link-wrapper {
-	margin: 0 auto;
 }
 
 .button-link a {
@@ -211,6 +203,87 @@ img {
 
 .button-link a:hover {
 	background-color: #002B40;
+}
+
+/* works */
+.works-wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+	background-color: rgba(13, 13, 14, 0.6);
+}
+
+.works-top {
+	margin: 36px 0 85px 0;
+	padding: 85px;
+}
+
+.box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+h3 {
+	font-size: 21px;
+	margin: 0;
+}
+
+.pict {
+	width: 30%;
+	margin-left: 3%;
+}
+
+.pict img {
+	width: 100%;
+	height: auto;
+}
+
+.box:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.box:nth-child(even) .text {
+	text-align: right;
+}
+
+.box:nth-child(even) .pict {
+	margin-left: 0;
+	margin-right: 3%;
+}
+
+@media (max-width:768px) {
+	.box {
+		flex-direction: column;
+	}
+
+	.box:nth-child(even) {
+		flex-direction: column;
+	}
+
+	.text {
+		text-align: center;
+	}
+
+	.box:nth-child(even) .text {
+		text-align: center;
+	}
+
+	.pict {
+		width: 100%;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.box:nth-child(even) .pict {
+		margin-left: 0;
+		margin-right: 0%;
+	}
+
+	.pict img {
+		width: 50%;
+		height: auto;
+	}
 }
 
 /* footer */
