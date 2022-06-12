@@ -26,7 +26,7 @@ p {
 }
 
 body {
-	background-image: linear-gradient(to top, #002B40 0%, #0454af 50%, #9de5eb 100%);
+	background-image: linear-gradient(to top, #002B40 20%, #eaf4fc 100%);
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -74,7 +74,7 @@ header {
 }
 
 .header-wrapper {
-	margin: 16px 16px 8px 16px;
+	margin: 20px 16px 8px 16px;
 	padding: 86px 16px 16px 16px;
 }
 
@@ -86,9 +86,47 @@ header p {
 }
 
 /* about */
-.about-wrapper {
-	margin: -26px 0 -80px 0;
-	background: #2e7fdb;
+.bubble-background {
+  position: relative;
+  background-color: #2e7fdb;
+  overflow: hidden;
+}
+
+/* 泡の見た目 */
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  background-color: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+  animation: bubble 8s linear infinite;
+}
+
+/* 泡の一番明るい部分を疑似要素で表現 */
+.bubble::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.25) translate(-70%, -70%);
+  background: radial-gradient(rgba(255,255,255, 0.5), transparent);
+  border-radius: 50%;
+}
+
+/* 泡が上に浮かび上がっていくアニメーション */
+@keyframes bubble {
+  0% {
+    transform: translatY(0);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
 }
 
 .about-top-wrapper {
