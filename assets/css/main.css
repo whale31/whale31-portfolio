@@ -164,6 +164,15 @@ header p {
 	transform: translateX(-20px);
 }
 
+.about-anime{
+  opacity : 0;
+  transition: opacity 3s;
+}
+
+.about-anime.view{
+  opacity: 1;
+}
+
 /* main */
 .main-about-wrapper {
 	margin: -5px 0 -68px 0;

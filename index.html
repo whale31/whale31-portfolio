@@ -22,6 +22,26 @@
         perturbance: 0.1 //波紋による屈折量（値が大きいほどブレる。）
       });
     });
+
+
+window.onload = function () {
+  fade_effect();
+
+  $(window).scroll(function () {
+    fade_effect();
+  });
+
+  function fade_effect() {
+    $('.about-anime').each(function () {
+      const targetElement = $(this).offset().top;
+      const scroll = $(window).scrollTop();
+      const windowHeight = $(window).height();
+      if (scroll > targetElement - windowHeight) {
+        $(this).addClass('view');
+      }
+    });
+  }
+};
   </script>
 </head>
 
@@ -36,7 +56,7 @@
       </p>
     </div>
   </header>
-
+  
   <main>
     <div>
       <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep10" viewBox="0 0 1600 200"
@@ -66,8 +86,8 @@
       <div class="about-top-wrapper">
         <div class="about-top">
           <div class="about">
-            <img src="images/aboutimage.png" alt="aboutimage" />
-            <p>様々な視野から考え<br>面白さや魅力を表現する<br>コンテンツを制作しています</p>
+            <img src="images/aboutimage.png" alt="aboutimage"  class="about-anime"/>
+            <p class="about-anime">様々な視野から考え<br>面白さや魅力を表現する<br>コンテンツを制作しています</p>
           </div>
         </div>
       </div>
