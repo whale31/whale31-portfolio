@@ -24,24 +24,24 @@
     });
 
 
-window.onload = function () {
-  fade_effect();
+    window.onload = function () {
+      fade_effect();
 
-  $(window).scroll(function () {
-    fade_effect();
-  });
+      $(window).scroll(function () {
+        fade_effect();
+      });
 
-  function fade_effect() {
-    $('.about-anime').each(function () {
-      const targetElement = $(this).offset().top;
-      const scroll = $(window).scrollTop();
-      const windowHeight = $(window).height();
-      if (scroll > targetElement - windowHeight) {
-        $(this).addClass('view');
+      function fade_effect() {
+        $('.anime-fadein').each(function () {
+          const targetElement = $(this).offset().top;
+          const scroll = $(window).scrollTop();
+          const windowHeight = $(window).height();
+          if (scroll > targetElement - windowHeight) {
+            $(this).addClass('view');
+          }
+        });
       }
-    });
-  }
-};
+    };
   </script>
 </head>
 
@@ -51,13 +51,53 @@ window.onload = function () {
       <a href="index.html">
         <h1>A-portfolio</h1>
       </a>
-      <p>
+      <p class="anime-fadein">
         ー 海のように様々な表情を表現し、想いを届けるコンテンツを ー
       </p>
     </div>
   </header>
-  
+
   <main>
+    <section class="first-section-wrapper">
+      <div class="first-section-top">
+
+        <div class="box-wrapper">
+          <div class="box">
+            <h3>works</h3>
+            <img src="images/box-eyecatch1.png" alt="works" />
+            <p class="box-text">
+              作品集です。
+            </p>
+            <div class="box-link">
+              <a href="#works">works</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <h3>learning</h3>
+            <img src="images/box-eyecatch2.png" alt="learning" />
+            <p class="box-text">
+              今まで学習してきた記録です。
+            </p>
+            <div class="box-link">
+              <a href="https://note.com/31whale31">note</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <h3>other</h3>
+            <img src="images/box-eyecatch3.png" alt="other" />
+            <p class="box-text">
+              ポートフォリオサービスサイトです。
+            </p>
+            <div class="box-link">
+              <a href="https://www.vivivit.com/portfolio/public/r2aymvuMfA">ViViViT</a>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
     <div>
       <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep10" viewBox="0 0 1600 200"
         style="display: block;" data-height="100">
@@ -82,19 +122,16 @@ window.onload = function () {
       </svg>
     </div>
 
-    <div class="bubble-background">
+    <section class="bubble-background">
       <div class="about-top-wrapper">
         <div class="about-top">
           <div class="about">
-            <img src="images/aboutimage.png" alt="aboutimage"  class="about-anime"/>
-            <p class="about-anime">様々な視野から考え<br>面白さや魅力を表現する<br>コンテンツを制作しています</p>
+            <img src="images/aboutimage.png" alt="aboutimage" class="anime-fadein" />
+            <p class="anime-fadein">様々な視野から考え<br>面白さや魅力を表現する<br>コンテンツを制作しています</p>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="about-wrapper">
-    </div>
+    </section>
 
     <div>
       <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep1" viewBox="0 0 1600 100"
@@ -133,96 +170,93 @@ s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z"></path>
       </svg>
     </div>
 
-
-    <div class="main-about-wrapper">
+    <section class="main-about-wrapper" id="works">
       <h2>Works</h2>
       <p class="main-about-text">作品紹介</p>
 
-      <div class="main-wrapper">
-        <div class="main-box">
+      <div class="box-wrapper">
+        <div class="box">
           <h3>sound</h3>
           <img src="images/work-images/sound-eyecatch.png" alt="sound（サウンド）" />
-          <p class="main-box-text">
+          <p class="box-text">
             タップするだけで和音とメロディーを演奏できる楽器アプリ<br><br>
             音楽に興味を持ち、楽器の演奏を始めるのにハードルが高く感じました。<br>
             そんな悩みを解決したいと思い気軽に遊べる楽器演奏アプリを作成しました。<br><br>
             完成年月：2022年3月</p>
-          <div class="button-link">
+          <div class="box-link">
             <a href="https://youtu.be/cA6J833PCEE">紹介動画</a>
           </div>
         </div>
 
-        <div class="main-box">
+        <div class="box">
           <h3>responsive</h3>
           <img src="images/noimage.png" alt="ノーイメージ" />
-          <p class="main-box-text">
+          <p class="box-text">
             架空WEBサイトデザイン。<br><br>
             レスポンシブデザインに挑戦しました。<br>
             コーヒー、お茶を取り扱うドリンク専門店をイメージして制作しました。<br><br>
             コーヒー、紅茶、鴛鴦茶のテイクアウト。コーヒー豆、茶葉の購入が楽しめるお店になっています。<br><br>
             完成年月：2019年3月
           </p>
-          <div class="button-link">
+          <div class="box-link">
             <a href="works/demo/responsive/index.html">DEMO</a>
           </div>
         </div>
 
-        <div class="main-box">
+        <div class="box">
           <h3>Daisu</h3>
           <img src="images/noimage.png" alt="ノーイメージ" />
-          <p class="main-box-text">
+          <p class="box-text">
             架空WEBサイトデザイン。<br><br>
             体験型TRPGとリアル脱出ゲームを楽しめる室内型テーマパーク。<br><br>
             物語にいるような空間で、仲間と協力してクリアを目指すアトラクションが楽しめる室内型テーマパークをイメージして制作しました。<br><br>
             完成年月：2019年2月
           </p>
-          <div class="button-link">
+          <div class="box-link">
             <a href="works/demo/daisu/index.html">DEMO</a>
           </div>
         </div>
 
-        <div class="main-box">
+        <div class="box">
           <h3>Happy Apple</h3>
           <img src="images/noimage.png" alt="ノーイメージ" />
-          <p class="main-box-text">
+          <p class="box-text">
             架空洋菓子店のWEBサイトデザイン。<br><br>
             アップルパイをメインに扱うお店のクリスマスシーズン用のWEBサイトを制作しました。<br><br>
             クリスマスの賑やかな雰囲気が出るように赤を主体にデザインしました。<br><br>
             完成年月：2018年11月<br>
           </p>
-          <div class="button-link">
+          <div class="box-link">
             <a href="works/demo/HappyApple/index.html">DEMO</a>
           </div>
         </div>
       </div>
 
-    </div>
-    </div>
-    </div>
+      </div>
+      </div>
+    </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#0454af" fill-opacity="1"
         d="M0,192L80,170.7C160,149,320,107,480,106.7C640,107,800,149,960,160C1120,171,1280,149,1360,138.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
       </path>
     </svg>
-
-    <div>
-      <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep5" viewBox="0 0 1600 200"
-        style="display: block;" data-height="200">
-        <polygon class="" style="fill: #002B40;"
-          points="1488,134 1304,100 1068,152 909.935,92.044 672,198 364,142 242,32 -4,95 -4,204 1604,204 1604,0 ">
-        </polygon>
-        <polygon class="" style="opacity: 1;fill: #EAF4FC;"
-          points="672,198 364,142 242,32 -4,95 -4,82.333 242,32 374,136 "></polygon>
-        <polygon class="" style="opacity: 1;fill: #EAF4FC;" points="894,86 672,198 909.935,92.044 "></polygon>
-        <polygon class="" style="opacity: 1;fill: #95a5a6;"
-          points="1068,152 1302,86 1486,126 1604,0 1488,134 1304,100 ">
-        </polygon>
-      </svg>
-    </div>
-    </div>
-
   </main>
+
+  <div>
+    <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep5" viewBox="0 0 1600 200"
+      style="display: block;" data-height="200">
+      <polygon class="" style="fill: #002B40;"
+        points="1488,134 1304,100 1068,152 909.935,92.044 672,198 364,142 242,32 -4,95 -4,204 1604,204 1604,0 ">
+      </polygon>
+      <polygon class="" style="opacity: 1;fill: #EAF4FC;"
+        points="672,198 364,142 242,32 -4,95 -4,82.333 242,32 374,136 "></polygon>
+      <polygon class="" style="opacity: 1;fill: #EAF4FC;" points="894,86 672,198 909.935,92.044 "></polygon>
+      <polygon class="" style="opacity: 1;fill: #95a5a6;" points="1068,152 1302,86 1486,126 1604,0 1488,134 1304,100 ">
+      </polygon>
+    </svg>
+  </div>
+  </div>
 
   <footer>
     <div class="footer-wrapper">
@@ -252,24 +286,6 @@ s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z"></path>
             </svg>
           </a>
 
-          <a href="https://www.vivivit.com/portfolio/public/r2aymvuMfA" class="sns">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 512 512">
-              <title>foriio</title>
-              <path d="M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z"
-                style="fill:none;stroke:#EAF4FC;stroke-miterlimit:10;stroke-width:32px" />
-              <path
-                d="M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z"
-                style="fill:none;stroke:#EAF4FC;stroke-miterlimit:10;stroke-width:32px" />
-              <path d="M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34"
-                style="fill:none;stroke:#EAF4FC;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-              <path d="M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34"
-                style="fill:none;stroke:#EAF4FC;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-              <line x1="256" y1="48" x2="256" y2="464"
-                style="fill:none;stroke:#EAF4FC;stroke-miterlimit:10;stroke-width:32px" />
-              <line x1="464" y1="256" x2="48" y2="256"
-                style="fill:none;stroke:#EAF4FC;stroke-miterlimit:10;stroke-width:32px" />
-            </svg>
-          </a>
         </div>
       </div>
 

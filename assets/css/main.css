@@ -26,7 +26,7 @@ p {
 }
 
 body {
-	background-image: linear-gradient(to top, #002B40 20%, #eaf4fc 100%);
+	background-image: linear-gradient(to top, #002B40 0%, #9ffaff 60%, #d8ffff 100%);
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -54,6 +54,7 @@ h3 {
 	font-weight: 900;
 	line-height: 1.5;
 	color: #EAF4FC;
+	margin: 0;
 }
 
 h4,
@@ -67,6 +68,81 @@ h6 {
 	color: #EAF4FC;
 }
 
+/* anime */
+.anime-fadein {
+	opacity: 0;
+	transition: opacity 3s;
+}
+
+.anime-fadein.view {
+	opacity: 1;
+}
+
+/* box */
+.box-wrapper {
+	margin: 0 55px 65px 55px;
+	display: grid;
+	gap: 15px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.box {
+	border-radius: 10px;
+	background-color: rgba(13, 13, 14, 0.4);
+	padding: 24px 55px 24px 55px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.box-text {
+	margin: 0 auto;
+	padding: 22px 12px 22px 12px;
+	text-align: left;
+	color: #EAF4FC;
+}
+
+.box-link a {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 250px;
+	padding: 12px 12px;
+	color: #EAF4FC;
+	transition: 0.3s ease-in-out;
+	font-weight: 600;
+	background: #3F83A6;
+	border-radius: 8px;
+	border: 4px solid currentColor;
+	border-color: #EAF4FC;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.box-link a:after {
+	position: absolute;
+	top: 50%;
+	right: 1em;
+	width: 0.5em;
+	height: 0.5em;
+	transform: translateY(-50%) rotate(45deg);
+	border-right: 2px solid currentColor;
+	border-top: 2px solid currentColor;
+	content: "";
+}
+
+.box-link a:hover {
+	background-color: #002B40;
+}
+
 /* header */
 header {
 	max-width: 980px;
@@ -74,7 +150,7 @@ header {
 }
 
 .header-wrapper {
-	margin: 20px 16px 8px 16px;
+	margin: 20px 16px 48px 16px;
 	padding: 86px 16px 16px 16px;
 }
 
@@ -85,48 +161,94 @@ header p {
 	line-height: 2.0;
 }
 
+/* first */
+.first-section-wrapper {
+	margin: 0 0 -144px 0;
+	text-align: center;
+}
+
+.first-section-top {
+	background: rgb(248, 184, 98, 0.8);
+	margin: 28px 0 0 0;
+	padding: 48px 24px 98px 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* about */
 .bubble-background {
-  position: relative;
-  background-color: #2e7fdb;
-  overflow: hidden;
+	position: relative;
+	background-color: #2e7fdb;
+	overflow: hidden;
 }
 
 /* 泡の見た目 */
 .bubble {
-  position: absolute;
-  bottom: -50px;
-  background-color: transparent;
-  border-radius: 50%;
-  pointer-events: none;
-  box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
-  animation: bubble 8s linear infinite;
+	position: absolute;
+	bottom: -50px;
+	background-color: transparent;
+	border-radius: 50%;
+	pointer-events: none;
+	box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+	animation: bubble 8s linear infinite;
 }
 
 /* 泡の一番明るい部分を疑似要素で表現 */
 .bubble::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.25) translate(-70%, -70%);
-  background: radial-gradient(rgba(255,255,255, 0.5), transparent);
-  border-radius: 50%;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: scale(0.25) translate(-70%, -70%);
+	background: radial-gradient(rgba(255, 255, 255, 0.5), transparent);
+	border-radius: 50%;
 }
 
 /* 泡が上に浮かび上がっていくアニメーション */
 @keyframes bubble {
-  0% {
-    transform: translatY(0);
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100vh);
-    opacity: 0;
-  }
+	0% {
+		transform: translatY(0);
+		opacity: 1;
+	}
+
+	99% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(-100vh);
+		opacity: 0;
+	}
 }
 
 .about-top-wrapper {
@@ -164,15 +286,6 @@ header p {
 	transform: translateX(-20px);
 }
 
-.about-anime{
-  opacity : 0;
-  transition: opacity 3s;
-}
-
-.about-anime.view{
-  opacity: 1;
-}
-
 /* main */
 .main-about-wrapper {
 	margin: -5px 0 -68px 0;
@@ -186,151 +299,6 @@ header p {
 	padding: 16px 14px 16px 14px;
 	text-align: center;
 	color: #EAF4FC;
-}
-
-.main-wrapper {
-	margin: 0 55px 65px 55px;
-	display: grid;
-	gap: 15px;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
-
-.main-box {
-	border-radius: 10px;
-	background-color: rgba(13, 13, 14, 0.6);
-	padding: 24px 55px 24px 55px;
-	text-align: center;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-}
-
-.main-box-text {
-	margin: 0 auto;
-	padding: 22px 12px 22px 12px;
-	text-align: left;
-	color: #EAF4FC;
-}
-
-.button-link a {
-	position: relative;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: 0 auto;
-	max-width: 250px;
-	padding: 12px 12px;
-	color: #EAF4FC;
-	transition: 0.3s ease-in-out;
-	font-weight: 600;
-	background: #3F83A6;
-	border-radius: 8px;
-	border: 4px solid currentColor;
-	border-color: #EAF4FC;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	box-sizing: border-box;
-}
-
-.button-link a:after {
-	position: absolute;
-	top: 50%;
-	right: 1em;
-	width: 0.5em;
-	height: 0.5em;
-	transform: translateY(-50%) rotate(45deg);
-	border-right: 2px solid currentColor;
-	border-top: 2px solid currentColor;
-	content: "";
-}
-
-.button-link a:hover {
-	background-color: #002B40;
-}
-
-/* works */
-.works-wrapper {
-	max-width: 980px;
-	margin: 0 auto;
-	background-color: rgba(13, 13, 14, 0.6);
-}
-
-.works-top {
-	margin: 36px 0 85px 0;
-	padding: 85px;
-}
-
-.box {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 40px;
-}
-
-h3 {
-	font-size: 21px;
-	margin: 0;
-}
-
-.pict {
-	width: 30%;
-	margin-left: 3%;
-}
-
-.pict img {
-	width: 100%;
-	height: auto;
-}
-
-.box:nth-child(even) {
-	flex-direction: row-reverse;
-}
-
-.box:nth-child(even) .text {
-	text-align: right;
-}
-
-.box:nth-child(even) .pict {
-	margin-left: 0;
-	margin-right: 3%;
-}
-
-@media (max-width:768px) {
-	.box {
-		flex-direction: column;
-	}
-
-	.box:nth-child(even) {
-		flex-direction: column;
-	}
-
-	.text {
-		text-align: center;
-	}
-
-	.box:nth-child(even) .text {
-		text-align: center;
-	}
-
-	.pict {
-		width: 100%;
-		margin-left: 0;
-		text-align: center;
-	}
-
-	.box:nth-child(even) .pict {
-		margin-left: 0;
-		margin-right: 0%;
-	}
-
-	.pict img {
-		width: 50%;
-		height: auto;
-	}
 }
 
 /* footer */
