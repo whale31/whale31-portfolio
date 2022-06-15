@@ -161,7 +161,7 @@ header p {
 	line-height: 2.0;
 }
 
-/* first */
+/* first */s
 .first-section-wrapper {
 	margin: 0 0 -144px 0;
 	text-align: center;
@@ -170,7 +170,7 @@ header p {
 .first-section-top {
 	background: rgb(248, 184, 98, 0.8);
 	margin: 28px 0 0 0;
-	padding: 48px 24px 98px 24px;
+	padding: 84px 24px 98px 24px;
 }
 
 
